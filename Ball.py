@@ -27,6 +27,7 @@ class Ball:
         self.y_vel = init_y_vel
 
         self.WINDOW_SIZE = None
+        # self.WINDOW_SIZE = pygame.display.get_window_size()
 
     def get_x_pos(self):
         """
