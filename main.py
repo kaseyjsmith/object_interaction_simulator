@@ -45,9 +45,10 @@ if __name__ == '__main__':
             )
         )
 
-    if sys.argv[1] == '--fbf':
-        # Set frame-by-frame simulation by pressing right
-        mode = 'fbf'
+    if len(sys.argv) > 1:
+        if sys.argv[1] == '--fbf':
+            # Set frame-by-frame simulation by pressing right
+            mode = 'fbf'
     else:
         # let it run
         mode = None
