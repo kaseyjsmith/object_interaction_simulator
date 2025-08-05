@@ -31,6 +31,8 @@ However, the simulation starts to lag heavily over ~200 balls. Since I'm not rea
             ...
 ```
 
-### Threading
+### Spacial Partitioning
+
+Checking every ball against every other ball is wasteful. I really only need to check balls that are relatively close to each other. By breaking down the window into grids, I can just check for collisions inside of cells and with adjacent cells.
 
 
